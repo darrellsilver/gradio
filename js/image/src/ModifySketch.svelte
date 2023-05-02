@@ -5,7 +5,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	export let show_eraser: boolean = false;
+	export let show_eraser: boolean = true;
 </script>
 
 <div>
