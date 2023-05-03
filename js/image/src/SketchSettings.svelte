@@ -18,13 +18,15 @@
 	$: width = container_height * (img_width / img_height);
 
 	function toggle_eraser() {
+		console.log(brush_radius);
 		if (brush_color == "#fff") {
 			brush_color = "#000";
-			brush_radius = 5;
+			brush_radius = 3;
 		} else {
 			brush_color = "#fff";
-			brush_radius = 20;
+			brush_radius = 10;
 		}
+		console.log(brush_radius);
 	}
 </script>
 
