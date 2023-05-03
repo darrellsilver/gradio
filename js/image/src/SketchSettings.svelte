@@ -16,10 +16,18 @@
 	export let mode: "mask" | "other" = "other";
 
 	$: width = container_height * (img_width / img_height);
+
+	function toggle_eraser() {
+		if (brush_color == "#fff") {
+			brush_color = "#000";
+		} else {
+			brush_color = "#fff";
+		}
+	}
 </script>
 
 <div class="wrap">
-	<span class="brush">
+	<!-- <span class="brush">
 		<IconButton
 			Icon={Brush}
 			label="Use brush"
@@ -34,14 +42,14 @@
 				max={75 * (img_width / width)}
 			/>
 		{/if}
-	</span>
+	</span> -->
 
 	{#if mode !== "mask"}
 		<span class="col">
 			<IconButton
 				Icon={Color}
-				label="Select brush color"
-				on:click={() => (show_col = !show_col)}
+				label="paint or erase"
+				on:click={toggle_eraser}
 			/>
 			{#if show_col}
 				<input aria-label="Brush color" bind:value={brush_color} type="color" />
