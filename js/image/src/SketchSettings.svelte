@@ -20,10 +20,10 @@
 	function toggle_eraser() {
 		if (brush_color == "#fff") {
 			brush_color = "#000";
-			brush_radius = 40;
+			brush_radius = 20;
 		} else {
 			brush_color = "#fff";
-			brush_radius = 20;
+			brush_radius = 25;
 		}
 	}
 </script>
