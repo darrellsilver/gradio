@@ -21,7 +21,7 @@
 		console.log(brush_radius);
 		if (brush_color == "#fff") {
 			brush_color = "#000";
-			brush_radius = 3;
+			brush_radius = 2;
 		} else {
 			brush_color = "#fff";
 			brush_radius = 10;

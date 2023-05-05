@@ -601,9 +601,10 @@
 >
 	{#if line_count === 0}
 		<div transition:fade={{ duration: 50 }} class="start-prompt">
-			Start drawing
+			Draft some furniture
 		</div>
 	{/if}
+	<img src="#" style="display:none;" alt="last draft" />
 	{#each canvas_types as { name, zIndex }}
 		<canvas
 			key={name}
