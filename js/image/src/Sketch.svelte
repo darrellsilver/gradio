@@ -604,7 +604,7 @@
 			Draft some furniture
 		</div>
 	{/if}
-	<img src="#" style="display:none;" alt="last draft" />
+
 	{#each canvas_types as { name, zIndex }}
 		<canvas
 			key={name}
